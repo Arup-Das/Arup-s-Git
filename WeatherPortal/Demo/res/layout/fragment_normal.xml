@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3539"
+    tools:context=".NormalFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="place"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/place"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:text="100"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/temp"
+            android:layout_alignRight="@+id/date"
+            android:layout_alignTop="@+id/temp"
+            android:layout_toRightOf="@+id/temp"
+            android:fontFamily="sans-serif-light"
+            android:text="°"
+            android:textColor="@color/white"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/con1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fimage"
+            android:layout_alignRight="@+id/date"
+            android:layout_alignTop="@+id/fimage"
+            android:layout_toRightOf="@+id/fimage"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="sunny"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textColorLink="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/high1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temp"
+            android:layout_alignRight="@+id/temp"
+            android:layout_marginRight="26dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="100"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textColorLink="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/low1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temp"
+            android:layout_toRightOf="@+id/temp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="100"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textColorLink="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/fimage"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/high1"
+            android:layout_alignRight="@+id/high1"
+            android:paddingBottom="5dp"
+            android:src="@drawable/i10" />
+
+    </RelativeLayout>
+
+</FrameLayout>
